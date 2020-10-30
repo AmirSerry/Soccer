@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Soccer</string>
+    <string name="team_1">Team 1</string>
+    <string name="score">Score</string>
+    <string name="fouls">Fouls</string>
+    <string name="add_goal">Add Goal</string>
+    <string name="add_foul">Add Foul</string>
+    <string name="team_2">Team 2</string>
+    <string name="reset">Reset</string>
+    <string name="soccer_game">Soccer Game</string>
+</resources>

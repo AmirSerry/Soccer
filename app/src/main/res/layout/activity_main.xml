@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/soccer_game"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/team_1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/score"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team_1_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/fouls"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team_1_foul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/team_1_add_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addGoalForTeam1"
+                android:text="@string/add_goal" />
+
+            <Button
+                android:id="@+id/team_1_add_foul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFoulForTeam1"
+                android:text="@string/add_foul" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/team_2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/score"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team_2_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/fouls"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team_2_foul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/team_2_add_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addGoalForTeam2"
+                android:text="@string/add_goal" />
+
+            <Button
+                android:id="@+id/team_2_add_foul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFoulForTeam2"
+                android:text="@string/add_foul" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:text="@string/reset" />
+</LinearLayout>
